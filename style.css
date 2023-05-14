@@ -15,7 +15,7 @@ body {
 
 main {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@ main {
 
 /* LAYOUT */
 .left {
-  height: 110vh;
+  height: 100vh;
   width: 35%;
   background-image: url(1.jpg);
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ main {
   background-size: cover;
 }
 .right {
-  height: 110vh;
+  height: 100vh;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -55,17 +55,17 @@ main {
   width: 100%;
 }
 .box1 {
-  flex: 25%;
+  flex: 30%;
   padding: 20px;
 }
 .box2 {
-  flex: 50%;
+  flex: 40%;
   box-shadow: 1px 1px 5px grey;
   padding: 1rem;
 }
 .box3 {
   padding: 4rem;
-  flex: 25%;
+  flex: 30%;
 }
 
 label {
@@ -82,10 +82,20 @@ input {
   width: 13rem;
   margin-bottom: 1rem;
 }
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 3px #1670be;
+  outline-offset: 0px;
+  outline: none;
+}
 .my-forms {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.log-in-link {
+  color: rgb(255, 14, 14);
+  text-decoration: none;
 }
 
 .my-forms input {
